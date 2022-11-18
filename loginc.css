@@ -6,7 +6,7 @@
 .cov{
 	width:100%;
 	height:100%;
-	background-image: url("file:///F:/Web%20development/extra%20tryout/INT%20project/vecteezy.jpg");
+	background-image: url("/INT project/vecteezy.jpg");
 	background-position: center;
 	background-size: cover;
 	display: flex;
