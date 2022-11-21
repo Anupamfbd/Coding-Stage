@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width", initial-scale=1.0>
 	<title>Login or Sign in</title>
 	<link rel="stylesheet" href="loginc.css">
+	<script>
+		document.getElementById("submit").disabled=true;
+		var x = document.getElementById("uname").value;
+		var y = document.getElementById("uname").value;
+		const person=[256,257,258,259,260];
+		const pass=[1, 2, 3, 4, 5];
+		var res= false;
+        for(let i=0; i<person.length; i++){
+        	if(x==person[i] && y==pass[i]){
+                 res=true;
+                 document.getElementById("submit").disabled=false;
+                 break;
+        	}
+        	else{
+        		continue;
+        	}
+        }
+
+	</script>
 </head>
 <body>
 	<section class="cov">
 	<div class="container">
 		<h1>Log In</h1>
 		<div class="ip">
-		<input type="text" placeholder="Username" required>
-		<input type="password" placeholder="Password" required>
-		</div>
-		<a href="home.html">Submit</a>
-		<p onclick="location.href='index.html'">Help | Sign in</p>
+		<input type="text" placeholder="Username" id="uname" required>
+		<input type="password" placeholder="Password" id="upass" required></div>
+		<a href="file:///F:/Web%20development/extra%20tryout/INT%20project/home_main.html"><button >Submit</button></a>
 	</div>
     </section>
 </body>
