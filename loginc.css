@@ -10,12 +10,13 @@
 	background-position: center;
 	background-size: cover;
 	display: flex;
-    align-items: center;
+	align-items: center;
+
     
 }
 .container{
-    width: 60%;
-    height: 400px;
+	width: 60%;
+	height: 400px;
     padding: 50px;
     display: flex;
     align-items: center;
@@ -32,11 +33,10 @@
 }
 .ip{
 	margin:0 auto;
-	width: 800px;
 	padding:50px 10px;
-	display:flex;
-    	flex-direction: column;
-	justify-content:center;
+	display: flex;
+	flex-direction: column;
+        justify-content: center;
 }
 .container input{
 	border-radius: 20px;
@@ -46,7 +46,7 @@
 	border-style: none;
 
 }
-.container a{
+.container button{
 	border-radius: 20px;
 	padding:10px 40px;
 	margin:10px auto;
@@ -60,9 +60,5 @@
     .cov{
     	width: 100%;
     }
-    .ip{
-	display:flex;
-    	flex-direction: column;
-	justify-content:center;
-    }
+
 }
