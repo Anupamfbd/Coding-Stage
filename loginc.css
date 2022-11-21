@@ -34,6 +34,9 @@
 	margin:0 auto;
 	width: 800px;
 	padding:50px 10px;
+	display:flex;
+    	flex-direction: column;
+	justify-content:center;
 }
 .container input{
 	border-radius: 20px;
@@ -60,5 +63,6 @@
     .ip{
 	display:flex;
     	flex-direction: column;
+	justify-content:center;
     }
 }
