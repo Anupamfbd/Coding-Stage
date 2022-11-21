@@ -295,6 +295,9 @@ p{
     .navbar{
 	  padding:0;
      }
+    .nav-links li{
+	    margin:0 20px;
+    }
     header{
 	height:50vh;
     }
