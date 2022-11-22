@@ -2,39 +2,48 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width", initial-scale=1.0>
 	<title>Login or Sign in</title>
 	<link rel="stylesheet" href="loginc.css">
-	<script>
-		document.getElementById("submit").disabled=true;
-		var x = document.getElementById("uname").value;
-		var y = document.getElementById("uname").value;
-		const person=[256,257,258,259,260];
-		const pass=[1, 2, 3, 4, 5];
-		var res= false;
-        for(let i=0; i<person.length; i++){
-        	if(x==person[i] && y==pass[i]){
-                 res=true;
-                 document.getElementById("submit").disabled=false;
-                 break;
-        	}
-        	else{
-        		continue;
-        	}
-        }
+    <script type="text/javascript">
 
+	    function abc(){
+	    	var email= document.getElementById('email');
+	    	var pass= document.getElementById('password');
+
+	    	if(email.value=="" || pass.value==""){
+	    		alert("Please Fill all the Fields");
+	    		return false;
+	    	}
+	    	else{
+                   true;
+	    	}
+	       var format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+               if(email.value.match(format))
+               {
+                  return true;
+               }
+               else
+               {
+                  alert("Please Enter a valid email address");
+                  return false;
+               }
+          
+	}
+		
 	</script>
 </head>
 <body>
+	<form action="home.html" onsubmit="return abc()">
 	<section class="cov">
 	<div class="container">
 		<h1>Log In</h1>
 		<div class="ip">
-		<input type="text" placeholder="Username" id="uname" required>
-		<input type="password" placeholder="Password" id="upass" required></div>
-		<a href="home_main.html"><button >Submit</button></a>
+		<input type="email" placeholder="Email" id="email">
+		<input type="password" placeholder="Password" id="password"></div>
+		<button type="submit">Submit</button>
 	</div>
     </section>
+</form>
 </body>
 </html>
