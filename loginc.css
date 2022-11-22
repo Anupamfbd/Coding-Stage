@@ -60,5 +60,11 @@
     .cov{
     	width: 100%;
     }
+    .ip{
+    	display: flex;
+	flex-direction: column;
+        justify-content: center;
+        margin:auto 200px;
+    }
 
 }
